@@ -1,0 +1,5 @@
+body { font-family: sans-serif; margin: 40px; }
+nav ul { list-style: none; display: flex; gap: 1em; padding: 0; }
+nav li { display: inline; }
+.admin-only, .waiter-only, .kitchen-screen-only { display: none; }
+#role { font-weight: bold; }
