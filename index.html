@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Waitlist App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul id="nav">
+      <li class="admin-only"><a href="/admin.html">Admin Panel</a></li>
+      <li class="waiter-only"><a href="/tables.html">Table List</a></li>
+      <li class="kitchen-screen-only"><a href="/kitchen.html">Kitchen Screen</a></li>
+      <li><a href="/menu.html">Menu</a></li>
+      <li><a href="/waitlist.html">Waitlist</a></li>
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/login.html">Login</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h1>Welcome to Waitlist App</h1>
+      <p>Your role: <span id="role">Unknown</span></p>
+      <form id="loginForm" autocomplete="off">
+        <label>
+          Role:
+          <select name="role" required>
+            <option value="Admin">Admin</option>
+            <option value="Waiter">Waiter</option>
+            <option value="Customer">Customer</option>
+            <option value="Guest">Guest</option>
+            <option value="Kitchen">Kitchen</option>
+            <option value="Kitchen Screen">Kitchen Screen</option>
+          </select>
+        </label>
+        <label>Name: <input name="name" value="User" required maxlength="50"></label>
+        <button type="submit">Login as Role</button>
+      </form>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
