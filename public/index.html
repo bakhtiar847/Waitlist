@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Waitlist Access Matrix Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul id="nav">
+      <li class="admin-only"><a href="/admin.html">Admin Panel</a></li>
+      <li class="waiter-only"><a href="/tables.html">Table List</a></li>
+      <li class="kitchen-screen-only"><a href="/kitchen.html">Kitchen Screen</a></li>
+      <li><a href="/menu.html">Menu</a></li>
+      <li><a href="/waitlist.html">Waitlist</a></li>
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/login.html">Login</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Welcome to Waitlist Demo</h1>
+    <p>Your role: <span id="role">Unknown</span></p>
+    <form id="loginForm">
+      <label>
+        Role:
+        <select name="role">
+          <option>Admin</option>
+          <option>Waiter</option>
+          <option>Customer</option>
+          <option>Guest</option>
+          <option>Kitchen</option>
+          <option>Kitchen Screen</option>
+        </select>
+      </label>
+      <label>Name: <input name="name" value="User"></label>
+      <button type="submit">Login as Role</button>
+    </form>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
